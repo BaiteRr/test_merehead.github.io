@@ -2,8 +2,12 @@
     font-family: 'Inter';
     src: url(18b8c68e64126db9ce88dfcf10b6ac84.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url(03523cf578d69fa923226ff457b92d90.ttf) format('true-type');
+}
 @charset "UTF-8";
-.page, .item {
+.page, .item, .photo, .text, .text .download, .date {
   display: flex;
   font-size: 0; }
 
@@ -442,7 +446,8 @@ table {
 
 .main {
   flex: 92.84%;
-  width: 1006px; }
+  width: 1006px;
+  padding: 40px 24px 0; }
 
 .item {
   flex-direction: column;
@@ -464,6 +469,93 @@ table {
       margin-top: 86px; }
     .item__image:last-child {
       padding-bottom: 26px; }
+
+.info__row {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+  margin-bottom: 24px; }
+
+.photo {
+  justify-content: space-between; }
+  .photo__img {
+    margin-bottom: 24px; }
+
+.text {
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto; }
+  .text img {
+    padding-right: 8.5px; }
+  .text__max {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000000; }
+  .text__download {
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 6px; }
+  .text .download {
+    justify-content: center;
+    align-items: center;
+    width: 40%; }
+    .text .download img {
+      padding-right: 9.5px; }
+    .text .download__text {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 160%;
+      color: #323232;
+      padding: 8px 0; }
+
+.date__name {
+  width: 50%; }
+
+.name__name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 36px;
+  color: #323232; }
+  .name__name:nth-child(1) {
+    padding-top: 16px; }
+
+.inputFirst {
+  height: 39px;
+  width: 95%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+  border-radius: 6px;
+  border: 1px solid #C4C4C4; }
+  .inputFirst::placeholder {
+    padding-left: 16px; }
+
+.inputNext {
+  height: 39px;
+  width: 97.5%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C4C4C4;
+  border-radius: 6px;
+  border: 1px solid #C4C4C4; }
+  .inputNext::placeholder {
+    padding-left: 16px; }
 
 
 /*# sourceMappingURL=main.css.map*/
