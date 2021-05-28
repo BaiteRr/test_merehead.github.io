@@ -5,11 +5,12 @@
 .page {
     @extend %flexbox;
     width: 100%;
+    
 }
 .menu {
     flex: 0 1 7.15%;
     background-color: #C4C4C4;
-    height: 100vh;
+    
 }
 .main {
     flex: 92.84%;
