@@ -94,9 +94,14 @@
 .date {
     @extend %flexbox;
     // .date__name
-
+    @media (max-width: 652px) {
+        flex-wrap: wrap;
+    }
     &__name {
         width: 50%;
+        @media (max-width: 652px) {
+            min-width: 100%;
+        }
     }
 }
 
@@ -160,7 +165,7 @@
     &::placeholder {
         padding-left: 16px;
     }
-
+    
 }
 
 .inputNext {
